@@ -324,7 +324,7 @@ function loop(){
   });
   engine(now,vh);
   requestAnimationFrame(loop)}
-if(!R2)loop();
+
 
 var vm=document.getElementById('vm'),vf=document.getElementById('vf'),vlast=null;
 function openV(id){vlast=document.activeElement;vf.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&playsinline=1&rel=0&modestbranding=1';document.getElementById('vl').href='https://www.youtube.com/shorts/'+id;vm.hidden=false;document.body.style.overflow='hidden';document.getElementById('vx').focus()}
@@ -360,6 +360,7 @@ function engine(now,vh){
     else tr='perspective(900px) rotateX('+(-dir*85*s)+'deg) translateY('+(dir*50*s)+'px)';
     el.style.transform=tr;el.style.opacity=e});
 }
+if(!R2)loop();
 </script>
 </body>
 </html>
